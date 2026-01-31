@@ -22,7 +22,9 @@ public class CameraFollow : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
 
         // Keep camera’s rotation fixed (don’t rotate with player)
+
         transform.rotation = Quaternion.Euler(25f, 45f, 0f);
         // You can tweak this to your preferred isometric angle.
+
     }
 }
