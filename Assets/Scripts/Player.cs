@@ -18,13 +18,12 @@ public class Player : MonoBehaviour
     public void TakeDmg()
     {
         _currentHealth -= 1;
+        _healthbar.UpdateHealthBar(_maxHealth, _currentHealth);
         if (_currentHealth <= 0)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            Debug.Log("Player Died :(");
         }
-        else
-        {
-            _healthbar.UpdateHealthBar(_maxHealth, _currentHealth);
-        }
+
     }
 }
