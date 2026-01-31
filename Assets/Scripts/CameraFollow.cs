@@ -23,6 +23,5 @@ public class CameraFollow : MonoBehaviour
 
         // Keep camera’s rotation fixed (don’t rotate with player)
         transform.rotation = Quaternion.Euler(45f, 45f, 0f);
-        // You can tweak this to your preferred isometric angle.
     }
 }
