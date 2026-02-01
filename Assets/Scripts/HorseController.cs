@@ -10,9 +10,13 @@ public class HorseController : MonoBehaviour
         [SerializeField] private float _speed = 5;
         [SerializeField] private float _turnSpeed = 360;
 
+
+        [SerializeField] private Animator animator; // Reference to the Animator component
         void Start()
         {
             //rb = GetComponent<Rigidbody>();
+
+            //animator = GetComponent<Animator>();
         }
         
         void Update()
@@ -43,12 +47,15 @@ public class HorseController : MonoBehaviour
                 var rot = Quaternion.LookRotation(relative, Vector3.up);
 
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, _turnSpeed * Time.deltaTime);
-                }
+                }                
         }
 
         void Move() 
         {
             rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
+
+            animator.SetBool("running", _input.normalized.magnitude > 0);
+        
         }
 
 }
