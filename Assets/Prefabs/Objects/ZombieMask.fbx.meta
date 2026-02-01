@@ -3,47 +3,7 @@ guid: cdd3505958b87d84a8c362b1fbcebdb5
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Antenna
-    second: {fileID: 2100000, guid: bd11be710bf1885418c96931e34a59e2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Jewl
-    second: {fileID: 2100000, guid: b5be1ab13ef11d44aa7399f2446f66a4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Mask
-    second: {fileID: 2100000, guid: 80e5987821e47264a82f4194009cc363, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Metal
-    second: {fileID: 2100000, guid: 5420f0f254895d841818132280b14e6c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Skulls
-    second: {fileID: 2100000, guid: be22c06a1ba5fac4fafe2c7029f2a185, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: TornWing
-    second: {fileID: 2100000, guid: 4d796a89e66747d4c8bce875ef080ed8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Trim
-    second: {fileID: 2100000, guid: 49a1d62b03292ec46888cfb5192f9fc7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Vine
-    second: {fileID: 2100000, guid: 34ed4c6a5c478374895e77b89ebe00da, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -73,7 +33,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.2
+    globalScale: 0.5
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -131,7 +91,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.002
+    globalScale: 0.005
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
