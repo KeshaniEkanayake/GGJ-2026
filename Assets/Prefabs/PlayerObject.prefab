@@ -73,10 +73,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 794e99b09bc29a14a826e5cfa376e670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  player: {fileID: 0}
   moveSpeed: 6
   acceleration: 20
   rotationSpeedDeg: 720
   mainCamera: {fileID: 0}
+  projectilePrefab: {fileID: 0}
+  firePoint: {fileID: 0}
+  fireCooldown: 0.2
 --- !u!1 &690078659306583868
 GameObject:
   m_ObjectHideFlags: 0
