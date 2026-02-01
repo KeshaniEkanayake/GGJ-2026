@@ -5,11 +5,11 @@ public class EnemyMovement : MonoBehaviour
 {
 
     // Variables
-    Rigidbody rigidbody;
+    Rigidbody rb;
     public float movementSpeed = 5f; //Enemy's movement speed
     public float rotationSpeed = 5f; //Enemy's rotation speed
     private Vector3 startPos;//Enemy's starting position
-    public Transform player; //Player's transform
+    private GameObject player; //Player's transform
     public float stopFollowRadius = 2f; //Distance at which the Enemy stops following the Player
 
 
@@ -18,6 +18,12 @@ public class EnemyMovement : MonoBehaviour
     {
         //Obtain the enemy's starting position
         startPos = transform.position;
+
+        player =  GameObject.Find("PlayerObject");
+        if(player != null)
+        {
+            Debug.Log("Player Found");
+        }
     }
 
     // Update is called once per frame
@@ -25,12 +31,12 @@ public class EnemyMovement : MonoBehaviour
     {
         if(player != null)
         {
-            float distance = Vector3.Distance(transform.position, player.position);
+            float distance = Vector3.Distance(transform.position, player.transform.position);
 
             if(distance > stopFollowRadius)
             {
                 // Face the Player
-                Vector3 direction = (player.position - transform.position).normalized;
+                Vector3 direction = (player.transform.position - transform.position).normalized;
                 Quaternion lookRotation = Quaternion.LookRotation(direction);
                 transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
 
@@ -45,8 +51,6 @@ public class EnemyMovement : MonoBehaviour
         }
         
     }
-
-    // current code has an issue where when the enemy and player collide, they keep moving into the air
 
     void attack()
     {
