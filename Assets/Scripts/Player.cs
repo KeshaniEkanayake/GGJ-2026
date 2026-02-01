@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     private float _currentHealth;
     
     [SerializeField] private  HealthBar _healthbar;
+
+    // [SerializeField] private  GameOverManager gameOverManager;
     
     void Start()
     {
@@ -23,6 +25,8 @@ public class Player : MonoBehaviour
         {
             //Destroy(gameObject);
             Debug.Log("Player Died :(");
+            // added 'finalscore' by kesh to show the player dead screen
+            // gameOverManager.GameOverManager(finalScore);
         }
 
     }
