@@ -30,6 +30,12 @@
         Rigidbody rb;
         Vector3 currentVelocity;
         
+        
+
+        [Header("Target to follow")]
+        public Transform target;
+
+        public Vector3 offset; 
         void Awake()
         {
             rb = GetComponent<Rigidbody>();
@@ -54,17 +60,23 @@
             HandleShooting();
 
             HandleDmg();
+
+
+            transform.position = target.position + offset; 
         }
 
         void FixedUpdate()
         {
-            HandleMovement();
+            //HandleMovement();
             HandleRotationToMouse();
         }
 
         //Player movement controller
         void HandleMovement()
-        {
+        {   
+
+            
+            /*
             Vector2 moveInput = inputActions.Player.Move.ReadValue<Vector2>();
             float h = moveInput.x;
             float v = moveInput.y;
@@ -82,6 +94,8 @@
             Vector3 targetVelocity = desiredMove * moveSpeed;
             currentVelocity = Vector3.MoveTowards(currentVelocity, targetVelocity, acceleration * Time.fixedDeltaTime);
             rb.MovePosition(rb.position + currentVelocity * Time.fixedDeltaTime);
+            */
+
         }
 
         //Script to manage player rotation towards mouse
@@ -102,6 +116,7 @@
                 Quaternion newRot = Quaternion.RotateTowards(rb.rotation, targetRot, rotationSpeedDeg * Time.fixedDeltaTime);
                 rb.MoveRotation(newRot);
             }
+            
         }
 
         //Script to manage left click inputs and instatiate projectiles
