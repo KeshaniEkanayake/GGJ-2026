@@ -38834,6 +38834,9 @@ Transform:
   - {fileID: 1115672289}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+--- !u!1 &646205767
+=======
 --- !u!114 &487496684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39210,6 +39213,7 @@ Transform:
   m_PrefabInstance: {fileID: 2002094360}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &575782045
+>>>>>>> main
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39217,22 +39221,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
+  - component: {fileID: 646205769}
+  - component: {fileID: 646205768}
+  - component: {fileID: 646205770}
+  m_Layer: 0
+  m_Name: EnemyObject
+=======
   - component: {fileID: 575782046}
   - component: {fileID: 575782048}
   - component: {fileID: 575782047}
   m_Layer: 5
   m_Name: Background
+>>>>>>> main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
+--- !u!54 &646205768
+Rigidbody:
+=======
 --- !u!224 &575782046
 RectTransform:
+>>>>>>> main
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 646205767}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+=======
   m_GameObject: {fileID: 575782045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -39564,12 +39591,24 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640630053}
   m_Material: {fileID: 0}
+>>>>>>> main
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
+<<<<<<< HEAD
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!4 &646205769
+Transform:
+=======
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -39588,10 +39627,24 @@ MeshFilter:
   m_Mesh: {fileID: 1447809975}
 --- !u!23 &640630057
 MeshRenderer:
+>>>>>>> main
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 646205767}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.61, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1845865416}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &646205770
+=======
   m_GameObject: {fileID: 640630053}
   m_Enabled: 1
   m_CastShadows: 1
@@ -39636,11 +39689,24 @@ MeshRenderer:
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &640630058
+>>>>>>> main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 646205767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f100451370d09419f6a6fe3eab47ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
+  movementSpeed: 5
+  rotationSpeed: 5
+  player: {fileID: 487496683}
+  stopFollowRadius: 2
+=======
   m_GameObject: {fileID: 640630053}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -41432,6 +41498,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5375062687165675775, guid: c8bfe9c4da148264d901cb66adf45438, type: 3}
   m_PrefabInstance: {fileID: 1080482005}
   m_PrefabAsset: {fileID: 0}
+>>>>>>> main
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -53330,6 +53397,9 @@ MonoBehaviour:
   target: {fileID: 487496683}
   offset: {x: 0, y: 0, z: 0}
   smoothSpeed: 5
+<<<<<<< HEAD
+--- !u!1 &1845865415
+=======
 --- !u!1001 &1698689222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53398,6 +53468,7 @@ Transform:
   m_PrefabInstance: {fileID: 2077276494}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1745132825
+>>>>>>> main
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53405,6 +53476,14 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
+  - component: {fileID: 1845865416}
+  - component: {fileID: 1845865419}
+  - component: {fileID: 1845865418}
+  - component: {fileID: 1845865417}
+  m_Layer: 0
+  m_Name: Capsule
+=======
   - component: {fileID: 1745132826}
   - component: {fileID: 1745132831}
   - component: {fileID: 1745132830}
@@ -53413,17 +53492,35 @@ GameObject:
   - component: {fileID: 1745132827}
   m_Layer: 0
   m_Name: Mountain (12)
+>>>>>>> main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
+--- !u!4 &1845865416
+=======
 --- !u!4 &1745132826
+>>>>>>> main
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1845865415}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.81, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 646205769}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1845865417
+CapsuleCollider:
+=======
   m_GameObject: {fileID: 1745132825}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999329, z: -0, w: 0.011588676}
@@ -53435,11 +53532,16 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 178.672, z: 0}
 --- !u!64 &1745132827
 MeshCollider:
+>>>>>>> main
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1845865415}
+=======
   m_GameObject: {fileID: 1745132825}
+>>>>>>> main
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -53451,6 +53553,14 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
+<<<<<<< HEAD
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1845865418
+=======
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -53464,12 +53574,17 @@ MeshFilter:
   m_GameObject: {fileID: 1745132825}
   m_Mesh: {fileID: 1346341976}
 --- !u!23 &1745132829
+>>>>>>> main
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1845865415}
+=======
   m_GameObject: {fileID: 1745132825}
+>>>>>>> main
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -53488,7 +53603,11 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD
+  - {fileID: 2100000, guid: 2cc8a7b8f589cea42b285841cf0a2ebc, type: 2}
+=======
   - {fileID: 2100000, guid: 218cc8bd42f0df1478f432d5cc81a5b6, type: 2}
+>>>>>>> main
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -53512,12 +53631,21 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<< HEAD
+--- !u!33 &1845865419
+MeshFilter:
+=======
 --- !u!114 &1745132830
 MonoBehaviour:
+>>>>>>> main
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1845865415}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+=======
   m_GameObject: {fileID: 1745132825}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -65062,6 +65190,7 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+>>>>>>> main
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -65071,8 +65200,12 @@ SceneRoots:
   - {fileID: 1379510792}
   - {fileID: 1669652732}
   - {fileID: 487496683}
+<<<<<<< HEAD
+  - {fileID: 646205769}
+=======
   - {fileID: 1896776465}
   - {fileID: 2125947200}
   - {fileID: 1105616998}
   - {fileID: 1105777988}
   - {fileID: 117929623}
+>>>>>>> main
